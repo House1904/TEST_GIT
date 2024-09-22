@@ -17,7 +17,7 @@ for i in range(n):
             lst.append(num)
             break
         except ValueError:
-            print("Loi: Vui long nhap lại so hop le.")
+            print("Loi: Vui long nhap lại so nguyen hop le.")
 
 sum = 0
 
