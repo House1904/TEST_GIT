@@ -19,9 +19,6 @@ for i in range(n):
         except ValueError:
             print("Loi: Vui long nhap lại so nguyen hop le.")
 
-sum = 0
+total = sum(lst)
 
-for x in lst: # total = sum(lst) nếu muốn xài hàm ngắn gọn 
-    sum += x
-
-print("Tong cac phan tu trong mang la: ", sum)
+print("Tong cac phan tu trong mang la: ", total)
