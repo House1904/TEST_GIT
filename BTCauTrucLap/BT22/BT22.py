@@ -3,10 +3,10 @@ import math
 while True:
     try:
         x = float(input("Nhap so x de tinh can bac hai: "))
-        if x < 0:
+        if (x > 0):
+            break
+        else:
             print("So phai khong am.")
-            continue
-        break
     except ValueError:
         print("Loi: Vui long nhap mot so thuc hop le.")
 

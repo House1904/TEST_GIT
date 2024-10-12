@@ -7,7 +7,7 @@ def nhap_ma_tran(hang, cot):
         while True:
             try:
                 hang_i = list(map(int, input(f"Hang {i+1}: ").split()))
-                if len(hang_i) == cot:
+                if (len(hang_i) == cot):
                     ma_tran.append(hang_i)
                     break
                 else:
@@ -21,7 +21,7 @@ def nhap_kich_thuoc_ma_tran():
     while True:
         try:
             hang, cot = map(int, input("Nhap so hang va so cot (cach nhau boi khoang trang): ").split())
-            if hang > 0 and cot > 0:
+            if (hang > 0 and cot > 0):
                 return hang, cot
             else:
                 print("Loi: So hang va so cot phai la so nguyen duong.")
@@ -46,7 +46,7 @@ while True:
     B = nhap_ma_tran(hang_B, cot_B)
 
     # Kiểm tra kích thước của hai ma trận
-    if A.shape != B.shape:
+    if (A.shape != B.shape):
         print("Hai ma tran phai co cung kich thuoc de thuc hien phep cong.")
         print("Vui long nhap lai cac ma tran.")
     else:

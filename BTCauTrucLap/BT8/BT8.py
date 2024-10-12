@@ -6,11 +6,12 @@ while True:
         number = int(input("Nhap so (nhap 0 de ket thuc): "))
 
         # Kiem tra neu nhap so 0 thi ket thuc vong lap
-        if number == 0:
+        if (number == 0):
             break
 
         # Cap nhat gia tri lon nhat
-        if (max_value is None or number > max_value):
+        if (max_value is None or number > max_value): 
+            # max_value is None là để tránh lỗi khi nhập số đầu tiên
             max_value = number
 
     except ValueError:

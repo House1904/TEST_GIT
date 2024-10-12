@@ -5,7 +5,7 @@ while True:
         mau_so = int(input("Nhap mau so: "))
 
         # Kiem tra neu tu so hoac mau so bang 0 thi ket thuc vong lap
-        if tu_so == 0 or mau_so == 0:
+        if (tu_so == 0 or mau_so == 0):
             print("Ket thuc chuong trinh.")
             break
 
@@ -15,6 +15,5 @@ while True:
 
     except ValueError:
         print("Loi: Vui long nhap so nguyen hop le.")
-    except ZeroDivisionError:
-        print("Loi: Mau so khong duoc bang 0.")
+
 

@@ -13,11 +13,11 @@ while True:
     try:
         x = float(x_input)
         y = float(y_input)
-        points.append((x, y))
+        points.append((x, y)) # thêm cặp toạ độ vào list
     except ValueError:
         print("Vui long nhap toa do hop le.")
 
-if len(points) < 3:
+if (len(points) < 3):
     print("Can it nhat 3 diem de tao mot da giac.")
 else:
     perimeter = 0

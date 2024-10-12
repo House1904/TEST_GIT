@@ -6,11 +6,11 @@ while True:
         number = int(input("Nhap so (nhap 0 de ket thuc): "))
 
         # Neu nhap 0 thi ket thuc vong lap
-        if number == 0:
+        if (number == 0):
             break
 
         # Neu la so am thi tang bien dem
-        if number < 0:
+        if (number < 0):
             so_am += 1
 
     except ValueError:

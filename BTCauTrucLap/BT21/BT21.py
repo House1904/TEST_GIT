@@ -1,13 +1,13 @@
-import math
+﻿import math
 
 # Nhap so nguyen duong N
 while True:
     try:
         N = int(input("Nhap so nguyen duong N: "))
-        if N <= 0:
+        if (N > 0):
+            break
+        else: 
             print("Nhap lai! N phai la so nguyen duong.")
-            continue
-        break
     except ValueError:
         print("Loi: Vui long nhap so nguyen hop le.")
 
@@ -15,16 +15,16 @@ while True:
 primes = []
 num = 2  # Bat dau kiem tra tu so nguyen to nho nhat
 
-while len(primes) < N:
+while (len(primes) < N): # N là số lượng số nguyên tố đầu tiên
     # Kiem tra so nguyen to
     is_prime = True
     m = int(math.sqrt(num))
     for i in range(2, m + 1):
-        if num % i == 0:
+        if (num % i == 0):
             is_prime = False
             break
     
-    if is_prime:
+    if (is_prime): # thoả mãn yêu cầu thì thêm vào mảng chứa số nguyên tố
         primes.append(num)
     
     num += 1

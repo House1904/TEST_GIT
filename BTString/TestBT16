@@ -1,0 +1,25 @@
+﻿Nhập chuỗi ký tự: abacabc
+Các ký tự duy nhất trong chuỗi: {'b', 'a', 'c'}
+Số lượng ký tự duy nhất: 3
+
+Vị trí bắt đầu i = 0
+  Vị trí j = 0, thêm ký tự: a, tập ký tự hiện tại: {'a'}
+  Vị trí j = 1, thêm ký tự: b, tập ký tự hiện tại: {'b', 'a'}
+  Vị trí j = 2, thêm ký tự: a, tập ký tự hiện tại: {'b', 'a'}
+  Vị trí j = 3, thêm ký tự: c, tập ký tự hiện tại: {'b', 'a', 'c'}
+  Đã thu thập đủ ký tự, xâu con hiện tại: abac
+  Cập nhật xâu con dài nhất: abac
+
+Vị trí bắt đầu i = 1
+  Vị trí j = 1, thêm ký tự: b, tập ký tự hiện tại: {'b'}
+  Vị trí j = 2, thêm ký tự: a, tập ký tự hiện tại: {'b', 'a'}
+  Vị trí j = 3, thêm ký tự: c, tập ký tự hiện tại: {'b', 'a', 'c'}
+  Đã thu thập đủ ký tự, xâu con hiện tại: bac
+
+Vị trí bắt đầu i = 2
+  Vị trí j = 2, thêm ký tự: a, tập ký tự hiện tại: {'a'}
+  Vị trí j = 3, thêm ký tự: c, tập ký tự hiện tại: {'a', 'c'}
+  Vị trí j = 5, thêm ký tự: b, tập ký tự hiện tại: {'b', 'a', 'c'}
+  Đã thu thập đủ ký tự, xâu con hiện tại: acab
+
+Kết quả: Xâu con dài nhất chứa tất cả các ký tự là 'abac'

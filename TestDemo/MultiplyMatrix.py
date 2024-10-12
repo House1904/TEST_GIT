@@ -1,4 +1,4 @@
-import numpy as np
+﻿import numpy as np
 
 def nhap_ma_tran(hang, cot):
 	ma_tran = []
@@ -19,7 +19,7 @@ def kiem_tra_kich_thuoc():
 	while True:
 		try:
 			hang,cot = map(int,input("Nhap hang va cot tuong ung: ").split())
-			if hang > 0 and cot > 0:
+			if (hang > 0 and cot > 0):
 				return hang,cot
 			else:
 				print("Nhap lai!")
@@ -45,5 +45,11 @@ while True:
 		break
 	else:
 		print("So cot A phai bang so hang B, yeu cau nhap lai 2 MT.")
-		
 
+# print(np.transpose(A)) --> chuyển vị ma trận A
+# print(np.linalg.inv(A))  --> nghịch đảo ma trận A (nếu khả nghịch)
+# print(np.linalg.det(A)) --> Tính định thức ma trận.
+
+"""Để sử dụng hàm np.linalg.inv() nhằm tính nghịch đảo của ma trận trong bài toán của bạn, 
+ta cần đảm bảo rằng ma trận đó là ma trận vuông (số hàng bằng số cột) và khả nghịch (determinant ≠ 0). 
+Nếu không, phép tính nghịch đảo sẽ không thực hiện được, và NumPy sẽ báo lỗi."""
