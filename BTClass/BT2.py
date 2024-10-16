@@ -27,7 +27,7 @@ class Triangle:
             return "Tam giác đều"
         elif (self.side1 == self.side2 or self.side2 == self.side3 or self.side1 == self.side3):
             if (self.is_right_triangle()):
-                return "Tam giác vuông-cân"
+                return "Tam giác vuông cân"
             else:
                 return "Tam giác cân"
         elif (self.is_right_triangle()):

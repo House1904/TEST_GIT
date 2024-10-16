@@ -1,23 +1,13 @@
-﻿class Label:
-    def __init__(self, text, font):
-        self._text = text
-        # hoặc self.set_text(text)
-        self._font = font
+﻿class SampleClass:
+    class_attr = 100
 
-    def get_text(self):
-        return self._text
+    def __init__(self, instance_attr):
+        self.instance_attr = instance_attr
 
-    def set_text(self, value):
-        self._text = value.upper() # Attached behavior
+    def method(self):
+        print(f"Class attribute: {self.class_attr}")
+        print(f"Instance attribute: {self.instance_attr}")
 
-    def get_font(self):
-        return self._font
-
-    def set_font(self, value):
-        self._font = value
-
-label = Label("Fruits", "Drinks")
-print(label.get_text())
-
-label.set_text("Vegetables")
-print(label.get_text())
+print(SampleClass.class_attr)
+print(SampleClass.__dict__) # xuất ra tất cả các thuộc tính sẵn có của SampleClass
+print(SampleClass.__dict__["class_attr"]) # truy cập vào giá trị thuộc tính
